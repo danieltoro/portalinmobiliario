@@ -2,8 +2,10 @@ import db from './../models'
 
 const userController = {}
 
+// Create User
 userController.post = (req, res) => {
   const { username, password } = req.body
+  console.log(req.body);
 
   //  Validation
 
