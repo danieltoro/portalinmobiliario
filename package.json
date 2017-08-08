@@ -7,20 +7,28 @@
     "start": "nodemon bin/dev",
     "clean": "rm -rf dist/",
     "build": "npm run clean && mkdir dist && babel server -s -d dist",
-    "production": "npm run build && node bin/production"
+    "production": "npm run build && node bin/production",
+    "dev": "concurrently \"nodemon bin/dev\" \"webpack -w\" "
   },
   "dependencies": {
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
     "express": "^4.15.3",
-    "mongoose": "^4.10.8"
+    "mongoose": "^4.10.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
+    "concurrently": "^3.5.0",
     "dotenv": "^4.0.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "webpack": "^3.5.1"
   },
   "description": "API Rest for real estate aplication",
   "repository": {

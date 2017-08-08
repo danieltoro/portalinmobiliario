@@ -14,6 +14,8 @@ mongoose.connect(process.env.DATABASE,  { useMongoClient: true })
 const app = express()
 
 // Middlewares
+app.use(express.static(__dirname + '/../client/public'))
+
 app.use(bodyParser.json())
 app.use('/api', routes)
 
