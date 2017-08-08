@@ -4,9 +4,11 @@ import mongoose from 'mongoose'
 
 import routes from './routes'
 
-mongoose.createConnection('mongodb://localhost/portalinmobiliario', () => {
-  console.log('Connected to database');
-})
+mongoose.connect(process.env.DATABASE,  { useMongoClient: true })
+  .then(() => {
+    console.log('connected to mongodb');
+  })
+  .catch(err => console.log(err))
 
 
 const app = express()
