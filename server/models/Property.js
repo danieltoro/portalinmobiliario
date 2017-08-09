@@ -31,6 +31,7 @@ const propertySchema = new Schema({
       'Comercial',
       'Parcela',
       'Loteo'
+      
     ]
   },
   price: { type: Number, required: true },
