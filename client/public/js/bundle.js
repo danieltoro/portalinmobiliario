@@ -783,6 +783,12 @@ module.exports = __webpack_require__(19);
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(193);
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2016-present, Facebook, Inc.
@@ -1163,12 +1169,6 @@ var ReactComponentTreeHook = {
 
 module.exports = ReactComponentTreeHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(193);
 
 /***/ }),
 /* 10 */
@@ -7324,7 +7324,7 @@ module.exports = getIteratorFn;
 
 
 var ReactCurrentOwner = __webpack_require__(13);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(9);
 var ReactElement = __webpack_require__(17);
 
 var checkReactTypeSpec = __webpack_require__(96);
@@ -11217,7 +11217,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(9);
 }
 
 var loggedTypeFailures = {};
@@ -11259,7 +11259,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(9);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -14313,7 +14313,7 @@ module.exports = ReactOwner;
 
 var ReactInvalidSetStateWarningHook = __webpack_require__(118);
 var ReactHostOperationHistoryHook = __webpack_require__(119);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(9);
 var ExecutionEnvironment = __webpack_require__(6);
 
 var performanceNow = __webpack_require__(120);
@@ -18427,7 +18427,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(9);
 }
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -18435,7 +18435,7 @@ function instantiateChild(childInstances, child, name, selfDebugID) {
   var keyUnique = childInstances[name] === undefined;
   if (process.env.NODE_ENV !== 'production') {
     if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = __webpack_require__(8);
+      ReactComponentTreeHook = __webpack_require__(9);
     }
     if (!keyUnique) {
       process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -19492,7 +19492,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(9);
 }
 
 var loggedTypeFailures = {};
@@ -19534,7 +19534,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(9);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -19710,7 +19710,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(9);
 }
 
 /**
@@ -19726,7 +19726,7 @@ function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID
     var keyUnique = result[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
       if (!ReactComponentTreeHook) {
-        ReactComponentTreeHook = __webpack_require__(8);
+        ReactComponentTreeHook = __webpack_require__(9);
       }
       if (!keyUnique) {
         process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -22828,7 +22828,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 var DOMProperty = __webpack_require__(16);
 var EventPluginRegistry = __webpack_require__(29);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
 
@@ -22944,7 +22944,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
 
@@ -22994,7 +22994,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 var DOMProperty = __webpack_require__(16);
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
 
@@ -23092,7 +23092,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(9);
+var _axios = __webpack_require__(8);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -23100,43 +23100,43 @@ var _index = __webpack_require__(211);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _index3 = __webpack_require__(212);
+var _index3 = __webpack_require__(214);
 
 var _index4 = _interopRequireDefault(_index3);
 
-var _index5 = __webpack_require__(213);
+var _index5 = __webpack_require__(215);
 
 var _index6 = _interopRequireDefault(_index5);
 
-var _index7 = __webpack_require__(214);
+var _index7 = __webpack_require__(216);
 
 var _index8 = _interopRequireDefault(_index7);
 
-var _index9 = __webpack_require__(216);
+var _index9 = __webpack_require__(218);
 
 var _index10 = _interopRequireDefault(_index9);
 
-var _index11 = __webpack_require__(217);
+var _index11 = __webpack_require__(219);
 
 var _index12 = _interopRequireDefault(_index11);
 
-var _index13 = __webpack_require__(218);
+var _index13 = __webpack_require__(220);
 
 var _index14 = _interopRequireDefault(_index13);
 
-var _index15 = __webpack_require__(219);
+var _index15 = __webpack_require__(221);
 
 var _index16 = _interopRequireDefault(_index15);
 
-var _index17 = __webpack_require__(220);
+var _index17 = __webpack_require__(222);
 
 var _index18 = _interopRequireDefault(_index17);
 
-var _index19 = __webpack_require__(221);
+var _index19 = __webpack_require__(223);
 
 var _index20 = _interopRequireDefault(_index19);
 
-var _index21 = __webpack_require__(222);
+var _index21 = __webpack_require__(224);
 
 var _index22 = _interopRequireDefault(_index21);
 
@@ -24090,15 +24090,15 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(9);
+var _axios = __webpack_require__(8);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _Menu = __webpack_require__(223);
+var _Menu = __webpack_require__(212);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _TopHeader = __webpack_require__(224);
+var _TopHeader = __webpack_require__(213);
 
 var _TopHeader2 = _interopRequireDefault(_TopHeader);
 
@@ -24145,1029 +24145,6 @@ exports.default = Header;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Banner = function (_Component) {
-  _inherits(Banner, _Component);
-
-  function Banner() {
-    _classCallCheck(this, Banner);
-
-    return _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).apply(this, arguments));
-  }
-
-  _createClass(Banner, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'banner' },
-        _react2.default.createElement(
-          'div',
-          { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
-          _react2.default.createElement(
-            'div',
-            { className: 'carousel-inner', role: 'listbox' },
-            _react2.default.createElement(
-              'div',
-              { className: 'item active' },
-              _react2.default.createElement('img', { src: 'img/banner/banner-slider-1.jpg', alt: 'banner-slider-1' }),
-              _react2.default.createElement(
-                'div',
-                { className: 'carousel-caption banner-slider-inner banner-top-align' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'text-center' },
-                  _react2.default.createElement(
-                    'h1',
-                    { 'data-animation': 'animated fadeInDown delay-05s' },
-                    _react2.default.createElement(
-                      'span',
-                      null,
-                      'Find your'
-                    ),
-                    'Dream House'
-                  ),
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'hidden-xs' },
-                    'Lorem ipsum dolor sit amet, conconsectetuer adipiscing elit'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Get Started Now'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Learn More'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'item' },
-              _react2.default.createElement('img', { src: 'img/banner/banner-slider-2.jpg', alt: 'banner-slider-2' }),
-              _react2.default.createElement(
-                'div',
-                { className: 'carousel-caption banner-slider-inner banner-top-align' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'text-right' },
-                  _react2.default.createElement(
-                    'h1',
-                    { 'data-animation': 'animated fadeInDown delay-05s' },
-                    _react2.default.createElement(
-                      'span',
-                      null,
-                      'Sweet Home For'
-                    ),
-                    _react2.default.createElement('br', null),
-                    ' Small Family'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Get Started Now'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Learn More'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'item' },
-              _react2.default.createElement('img', { src: 'img/banner/banner-slider-3.jpg', alt: 'banner-slider-3' }),
-              _react2.default.createElement(
-                'div',
-                { className: 'carousel-caption banner-slider-inner banner-top-align' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'text-left' },
-                  _react2.default.createElement(
-                    'h1',
-                    { 'data-animation': 'animated fadeInDown delay-05s' },
-                    _react2.default.createElement(
-                      'span',
-                      null,
-                      'Best Place To'
-                    ),
-                    _react2.default.createElement('br', null),
-                    'Find Home'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Get Started Now'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
-                    'Learn More'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'left carousel-control', href: 'index.html#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
-            _react2.default.createElement(
-              'span',
-              { className: 'slider-mover-left', 'aria-hidden': 'true' },
-              _react2.default.createElement('i', { className: 'fa fa-angle-left' })
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: 'sr-only' },
-              'Previous'
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'right carousel-control', href: 'index.html#carousel-example-generic', role: 'button', 'data-slide': 'next' },
-            _react2.default.createElement(
-              'span',
-              { className: 'slider-mover-right', 'aria-hidden': 'true' },
-              _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: 'sr-only' },
-              'Next'
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Banner;
-}(_react.Component);
-
-exports.default = Banner;
-
-/***/ }),
-/* 213 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SearchArea = function (_Component) {
-  _inherits(SearchArea, _Component);
-
-  function SearchArea() {
-    _classCallCheck(this, SearchArea);
-
-    return _possibleConstructorReturn(this, (SearchArea.__proto__ || Object.getPrototypeOf(SearchArea)).apply(this, arguments));
-  }
-
-  _createClass(SearchArea, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'search-area' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'search-area-inner' },
-            _react2.default.createElement(
-              'div',
-              { className: 'search-contents ' },
-              _react2.default.createElement(
-                'div',
-                { className: 'row' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Area From'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '1000'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '800'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '600'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '400'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '200'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '100'
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Property Status'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'For Sale'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'For Rent'
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Location'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'United States'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'United Kingdom'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'American Samoa'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Belgium'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Cameroon'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Canada'
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Property Types'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Residential'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Commercial'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Land'
-                      )
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'row' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Bedrooms'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '1'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '2'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '3'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '4'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '5'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '6'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '7'
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'select',
-                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        'Bathrooms'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '1'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '2'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '3'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '4'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '5'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '6'
-                      ),
-                      _react2.default.createElement(
-                        'option',
-                        null,
-                        '7'
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'range-slider' },
-                      _react2.default.createElement('div', { 'data-min': '0', 'data-max': '150000', 'data-unit': 'USD', className: 'range-slider-ui ui-slider', 'aria-disabled': 'false' }),
-                      _react2.default.createElement('div', { className: 'clearfix' })
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6 ' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'form-group' },
-                    _react2.default.createElement(
-                      'button',
-                      { className: 'search-button' },
-                      'Search'
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return SearchArea;
-}(_react.Component);
-
-exports.default = SearchArea;
-
-/***/ }),
-/* 214 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-var _PropertyCard = __webpack_require__(215);
-
-var _PropertyCard2 = _interopRequireDefault(_PropertyCard);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var FeaturedProperties = function (_Component) {
-  _inherits(FeaturedProperties, _Component);
-
-  function FeaturedProperties() {
-    _classCallCheck(this, FeaturedProperties);
-
-    return _possibleConstructorReturn(this, (FeaturedProperties.__proto__ || Object.getPrototypeOf(FeaturedProperties)).apply(this, arguments));
-  }
-
-  _createClass(FeaturedProperties, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'content-area featured-properties' },
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            _react2.default.createElement(
-              'div',
-              { className: 'main-title' },
-              _react2.default.createElement(
-                'h1',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Featured'
-                ),
-                ' Properties'
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'list-inline-listing filters filters-listing-navigation' },
-              _react2.default.createElement(
-                'li',
-                { className: 'active btn filtr-button filtr', 'data-filter': 'all' },
-                'All'
-              ),
-              _react2.default.createElement(
-                'li',
-                { 'data-filter': '1', className: 'btn btn-inline filtr-button filtr' },
-                'House'
-              ),
-              _react2.default.createElement(
-                'li',
-                { 'data-filter': '2', className: 'btn btn-inline filtr-button filtr' },
-                'Office'
-              ),
-              _react2.default.createElement(
-                'li',
-                { 'data-filter': '3', className: 'btn btn-inline filtr-button filtr' },
-                'Apartment'
-              ),
-              _react2.default.createElement(
-                'li',
-                { 'data-filter': '4', className: 'btn btn-inline filtr-button filtr' },
-                'Residential'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'filtr-container' },
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null)
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return FeaturedProperties;
-}(_react.Component);
-
-exports.default = FeaturedProperties;
-
-/***/ }),
-/* 215 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PropertyCard = function (_Component) {
-  _inherits(PropertyCard, _Component);
-
-  function PropertyCard() {
-    _classCallCheck(this, PropertyCard);
-
-    return _possibleConstructorReturn(this, (PropertyCard.__proto__ || Object.getPrototypeOf(PropertyCard)).apply(this, arguments));
-  }
-
-  _createClass(PropertyCard, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item', 'data-category': '1, 2, 3' },
-        _react2.default.createElement(
-          'div',
-          { className: 'property' },
-          _react2.default.createElement(
-            'a',
-            { href: 'properties-details.html', className: 'property-img' },
-            _react2.default.createElement(
-              'div',
-              { className: 'property-tag button alt featured' },
-              'Destacada'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'property-tag button sale' },
-              'Venta'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'property-price' },
-              '$150.000'
-            ),
-            _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'property-content' },
-            _react2.default.createElement(
-              'h1',
-              { className: 'title' },
-              _react2.default.createElement(
-                'a',
-                { href: 'properties-details.html' },
-                'titulo de publicacion'
-              )
-            ),
-            _react2.default.createElement(
-              'h3',
-              { className: 'property-address' },
-              _react2.default.createElement(
-                'a',
-                { href: 'properties-details.html' },
-                _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                'Direccion'
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'facilities-list clearfix' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'tama\xF1o terreno'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '3 Beds'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-monitor' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'TV'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '2 Baths'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '1 Garage'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-building' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '3 Balcony'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'property-footer' },
-              _react2.default.createElement(
-                'span',
-                { className: 'left' },
-                _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                '5 days ago'
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'right' },
-                _react2.default.createElement(
-                  'a',
-                  { href: 'index.html#' },
-                  _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { href: 'index.html#' },
-                  _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return PropertyCard;
-}(_react.Component);
-
-exports.default = PropertyCard;
-
-/***/ }),
-/* 216 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Services = function (_Component) {
-  _inherits(Services, _Component);
-
-  function Services() {
-    _classCallCheck(this, Services);
-
-    return _possibleConstructorReturn(this, (Services.__proto__ || Object.getPrototypeOf(Services)).apply(this, arguments));
-  }
-
-  _createClass(Services, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'mrg-btm-100 our-service' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'main-title' },
-            _react2.default.createElement(
-              'h1',
-              null,
-              _react2.default.createElement(
-                'span',
-                null,
-                'What are you'
-              ),
-              'looking for?'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row mgn-btm wow' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-04s' },
-              _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement('i', { className: 'flaticon-apartment' }),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Apartments'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-04s' },
-              _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement('i', { className: 'flaticon-internet' }),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Houses'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight delay-04s' },
-              _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Garages'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight delay-04s' },
-              _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement('i', { className: 'flaticon-symbol' }),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Commercial'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: 'index.html#', className: 'btn button-md button-theme' },
-            'Read More'
-          )
-        )
-      );
-    }
-  }]);
-
-  return Services;
-}(_react.Component);
-
-exports.default = Services;
-
-/***/ }),
-/* 217 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
@@ -25177,1630 +24154,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var RecentlyProperties = function (_Component) {
-    _inherits(RecentlyProperties, _Component);
-
-    function RecentlyProperties() {
-        _classCallCheck(this, RecentlyProperties);
-
-        return _possibleConstructorReturn(this, (RecentlyProperties.__proto__ || Object.getPrototypeOf(RecentlyProperties)).apply(this, arguments));
-    }
-
-    _createClass(RecentlyProperties, [{
-        key: 'render',
-        value: function render() {
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'mrg-btm-70 recently-properties chevron-icon' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'main-title' },
-                        _react2.default.createElement(
-                            'h1',
-                            null,
-                            _react2.default.createElement(
-                                'span',
-                                null,
-                                'Recently'
-                            ),
-                            ' Properties'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'carousel our-partners slide', id: 'ourPartners2' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-lg-12 mrg-btm-30' },
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'prev' },
-                                    _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
-                                ),
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'next' },
-                                    _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'carousel-inner' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item active' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-3.jpg', alt: 'properties-3', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Modern Family Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.htmll.html' },
-                                                        'Beautiful Single Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-6.jpg', alt: 'properties-6', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Park Avenue'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-2.jpg', alt: 'properties-2', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Sweet Family Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return RecentlyProperties;
-}(_react.Component);
-
-exports.default = RecentlyProperties;
-
-/***/ }),
-/* 218 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PopularPlaces = function (_Component) {
-    _inherits(PopularPlaces, _Component);
-
-    function PopularPlaces() {
-        _classCallCheck(this, PopularPlaces);
-
-        return _possibleConstructorReturn(this, (PopularPlaces.__proto__ || Object.getPrototypeOf(PopularPlaces)).apply(this, arguments));
-    }
-
-    _createClass(PopularPlaces, [{
-        key: 'render',
-        value: function render() {
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'categories' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'main-title' },
-                        _react2.default.createElement(
-                            'h1',
-                            null,
-                            _react2.default.createElement(
-                                'span',
-                                null,
-                                'Popular'
-                            ),
-                            ' Places'
-                        )
-                    ),
-                    _react2.default.createElement('div', { className: 'clearfix' }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'row wow' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-7 col-md-7 col-sm-12' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'row' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-6 col-pad wow fadeInLeft delay-04s' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'category' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'category_bg_box cat-1-bg' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'category-overlay' },
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'category-content' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-title' },
-                                                        'Florida'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-subtitle' },
-                                                        '14 Properties'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'index.html#', className: 'btn button-sm button-theme' },
-                                                        'View All'
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-6 col-pad wow fadeInLeft delay-04s' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'category' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'category_bg_box cat-2-bg' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'category-overlay' },
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'category-content' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-title' },
-                                                        'California'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-subtitle' },
-                                                        '14 Properties'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'index.html#', className: 'btn button-sm button-theme ' },
-                                                        'View All'
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-12 col-pad wow fadeInUp delay-04s' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'category' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'category_bg_box cat-3-bg' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'category-overlay' },
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'category-content' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-title' },
-                                                        'New York'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'category-subtitle' },
-                                                        '27 Properties'
-                                                    ),
-                                                    _react2.default.createElement('br', null),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'index.html#', className: 'btn button-sm button-theme ' },
-                                                        'View All'
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-5 col-md-5 col-sm-12 col-pad wow fadeInRight delay-04s' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'category' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'category_bg_box category_long_bg cat-4-bg' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'category-overlay' },
-                                        _react2.default.createElement(
-                                            'span',
-                                            { className: 'category-content' },
-                                            _react2.default.createElement(
-                                                'span',
-                                                { className: 'category-title' },
-                                                'San Francisco'
-                                            ),
-                                            _react2.default.createElement('br', null),
-                                            _react2.default.createElement(
-                                                'span',
-                                                { className: 'category-subtitle' },
-                                                '14 Properties'
-                                            ),
-                                            _react2.default.createElement('br', null),
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'index.html#', className: 'btn button-sm button-theme ' },
-                                                'View All'
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return PopularPlaces;
-}(_react.Component);
-
-exports.default = PopularPlaces;
-
-/***/ }),
-/* 219 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Testimonial = function (_Component) {
-  _inherits(Testimonial, _Component);
-
-  function Testimonial() {
-    _classCallCheck(this, Testimonial);
-
-    return _possibleConstructorReturn(this, (Testimonial.__proto__ || Object.getPrototypeOf(Testimonial)).apply(this, arguments));
-  }
-
-  _createClass(Testimonial, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'testimonial-section testimonial-2 testimonial-3' },
-        _react2.default.createElement(
-          'div',
-          { className: 'testimonial-section-inner' },
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            _react2.default.createElement('div', { className: 'main-title' }),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-12' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'testimonials' },
-                  _react2.default.createElement(
-                    'div',
-                    { id: 'carouse3-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'carousel-inner', role: 'listbox' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'item content clearfix active' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'row' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'avatar' },
-                              _react2.default.createElement('img', { src: 'img/avatar/avatar-1.jpg', alt: 'avatar-1', className: 'img-responsive' })
-                            )
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'testimonials-info' },
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'text' },
-                                _react2.default.createElement(
-                                  'sup',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
-                                ),
-                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
-                                _react2.default.createElement(
-                                  'sub',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
-                                )
-                              ),
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'author-name' },
-                                'John Antony'
-                              ),
-                              _react2.default.createElement(
-                                'ul',
-                                { className: 'rating' },
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
-                                )
-                              )
-                            )
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'item content clearfix' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'row' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'avatar' },
-                              _react2.default.createElement('img', { src: 'img/avatar/avatar-2.jpg', alt: 'avatar-2', className: 'img-responsive' })
-                            )
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'testimonials-info' },
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'text' },
-                                _react2.default.createElement(
-                                  'sup',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
-                                ),
-                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
-                                _react2.default.createElement(
-                                  'sub',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
-                                )
-                              ),
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'author-name' },
-                                'John Mery'
-                              ),
-                              _react2.default.createElement(
-                                'ul',
-                                { className: 'rating' },
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
-                                )
-                              )
-                            )
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'item content clearfix' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'row' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'avatar' },
-                              _react2.default.createElement('img', { src: 'img/avatar/avatar-4.jpg', alt: 'avatar-4', className: 'img-responsive' })
-                            )
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'testimonials-info' },
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'text' },
-                                _react2.default.createElement(
-                                  'sup',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
-                                ),
-                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
-                                _react2.default.createElement(
-                                  'sub',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
-                                )
-                              ),
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'author-name' },
-                                'John Top'
-                              ),
-                              _react2.default.createElement(
-                                'ul',
-                                { className: 'rating' },
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
-                                )
-                              )
-                            )
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'item content clearfix' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'row' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'avatar' },
-                              _react2.default.createElement('img', { src: 'img/avatar/avatar-3.jpg', alt: 'avatar-3', className: 'img-responsive' })
-                            )
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12 ' },
-                            _react2.default.createElement(
-                              'div',
-                              { className: 'testimonials-info' },
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'text' },
-                                _react2.default.createElement(
-                                  'sup',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
-                                ),
-                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
-                                _react2.default.createElement(
-                                  'sup',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
-                                )
-                              ),
-                              _react2.default.createElement(
-                                'div',
-                                { className: 'author-name' },
-                                'John Pitarshon'
-                              ),
-                              _react2.default.createElement(
-                                'ul',
-                                { className: 'rating' },
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star' })
-                                ),
-                                _react2.default.createElement(
-                                  'li',
-                                  null,
-                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
-                                )
-                              )
-                            )
-                          )
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'a',
-                      { className: 'left carousel-control', href: 'index.html#carouse3-example-generic', role: 'button', 'data-slide': 'prev' },
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'slider-mover-left', 'aria-hidden': 'true' },
-                        _react2.default.createElement('i', { className: 'fa fa-angle-left' })
-                      ),
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'sr-only' },
-                        'Previous'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'a',
-                      { className: 'right carousel-control', href: 'index.html#carouse3-example-generic', role: 'button', 'data-slide': 'next' },
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'slider-mover-right', 'aria-hidden': 'true' },
-                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-                      ),
-                      _react2.default.createElement(
-                        'span',
-                        { className: 'sr-only' },
-                        'Next'
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Testimonial;
-}(_react.Component);
-
-exports.default = Testimonial;
-
-/***/ }),
-/* 220 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BrandsAndPartners = function (_Component) {
-  _inherits(BrandsAndPartners, _Component);
-
-  function BrandsAndPartners() {
-    _classCallCheck(this, BrandsAndPartners);
-
-    return _possibleConstructorReturn(this, (BrandsAndPartners.__proto__ || Object.getPrototypeOf(BrandsAndPartners)).apply(this, arguments));
-  }
-
-  _createClass(BrandsAndPartners, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'partners-block' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'h3',
-            null,
-            'Brands & Partners'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-md-12' },
-              _react2.default.createElement(
-                'div',
-                { className: 'carousel our-partners slide', id: 'ourPartners' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'carousel-inner' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'item active' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'col-xs-12 col-sm-6 col-md-3' },
-                      _react2.default.createElement(
-                        'a',
-                        { href: 'index.html#' },
-                        _react2.default.createElement('img', { src: 'img/brand/audiojungle.png', alt: 'audiojungle' })
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'item' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'col-xs-12 col-sm-6 col-md-3' },
-                      _react2.default.createElement(
-                        'a',
-                        { href: 'index.html#' },
-                        _react2.default.createElement('img', { src: 'img/brand/themeforest.png', alt: 'themeforest' })
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'item' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'col-xs-12 col-sm-6 col-md-3' },
-                      _react2.default.createElement(
-                        'a',
-                        { href: 'index.html#' },
-                        _react2.default.createElement('img', { src: 'img/brand/tuts.png', alt: 'tuts' })
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'item' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'col-xs-12 col-sm-6 col-md-3' },
-                      _react2.default.createElement(
-                        'a',
-                        { href: 'index.html#' },
-                        _react2.default.createElement('img', { src: 'img/brand/graphicriver.png', alt: 'graphicriver' })
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'item' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'col-xs-12 col-sm-6 col-md-3' },
-                      _react2.default.createElement(
-                        'a',
-                        { href: 'index.html#' },
-                        _react2.default.createElement('img', { src: 'img/brand/codecanyon.png', alt: 'codecanyon' })
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { className: 'left carousel-control', href: 'index.html#ourPartners', 'data-slide': 'prev' },
-                  _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { className: 'right carousel-control', href: 'index.html#ourPartners', 'data-slide': 'next' },
-                  _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return BrandsAndPartners;
-}(_react.Component);
-
-exports.default = BrandsAndPartners;
-
-/***/ }),
-/* 221 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Counter = function (_Component) {
-  _inherits(Counter, _Component);
-
-  function Counter() {
-    _classCallCheck(this, Counter);
-
-    return _possibleConstructorReturn(this, (Counter.__proto__ || Object.getPrototypeOf(Counter)).apply(this, arguments));
-  }
-
-  _createClass(Counter, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'counters' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-md-3 col-sm-6 bordered-right' },
-              _react2.default.createElement(
-                'div',
-                { className: 'counter-box' },
-                _react2.default.createElement('i', { className: 'flaticon-tag' }),
-                _react2.default.createElement(
-                  'h1',
-                  { className: 'counter' },
-                  '967'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Listings For Sale'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-md-3 col-sm-6 bordered-right' },
-              _react2.default.createElement(
-                'div',
-                { className: 'counter-box' },
-                _react2.default.createElement('i', { className: 'flaticon-symbol-1' }),
-                _react2.default.createElement(
-                  'h1',
-                  { className: 'counter' },
-                  '1276'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Listings For Rent'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-md-3 col-sm-6 bordered-right' },
-              _react2.default.createElement(
-                'div',
-                { className: 'counter-box' },
-                _react2.default.createElement('i', { className: 'flaticon-people' }),
-                _react2.default.createElement(
-                  'h1',
-                  { className: 'counter' },
-                  '396'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Agents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-md-3 col-sm-6' },
-              _react2.default.createElement(
-                'div',
-                { className: 'counter-box' },
-                _react2.default.createElement('i', { className: 'flaticon-people-1' }),
-                _react2.default.createElement(
-                  'h1',
-                  { className: 'counter' },
-                  '177'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Brokers'
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Counter;
-}(_react.Component);
-
-exports.default = Counter;
-
-/***/ }),
-/* 222 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Footer = function (_Component) {
-  _inherits(Footer, _Component);
-
-  function Footer() {
-    _classCallCheck(this, Footer);
-
-    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-  }
-
-  _createClass(Footer, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'footer',
-        { className: 'main-footer clearfix' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'footer-top' },
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-5 col-md-4 col-sm-3 col-xs-12' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'logo-2' },
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html' },
-                    _react2.default.createElement('img', { src: 'img/logos/footer-logo.png', alt: 'footer-logo' })
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-4  col-md-4 col-sm-5 col-xs-12' },
-                _react2.default.createElement(
-                  'form',
-                  { action: '#', method: 'post' },
-                  _react2.default.createElement('input', { type: 'text', className: 'form-contact', name: 'email', placeholder: 'Enter your email' }),
-                  _react2.default.createElement(
-                    'button',
-                    { type: 'submit', name: 'submitNewsletter', className: 'btn btn-default button-small' },
-                    _react2.default.createElement('i', { className: 'fa fa-paper-plane' })
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-3 col-md-4 col-sm-4 col-xs-12' },
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'social-list clearfix' },
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-rss' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'copy-right' },
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            '\xA9 2017',
-            _react2.default.createElement(
-              'a',
-              { href: 'http://themevessel.com/', target: '_blank' },
-              'Theme Vessel'
-            ),
-            '. Trademarks and brands are the property of their respective owners.'
-          )
-        )
-      );
-    }
-  }]);
-
-  return Footer;
-}(_react.Component);
-
-exports.default = Footer;
-
-/***/ }),
-/* 223 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(9);
+var _axios = __webpack_require__(8);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -27437,7 +24791,7 @@ var Menu = function (_Component) {
                                     _react2.default.createElement(
                                         'a',
                                         { href: 'submit-property.html', className: 'button' },
-                                        'Submit Property'
+                                        'Publicar Propiedad'
                                     )
                                 )
                             )
@@ -27454,7 +24808,7 @@ var Menu = function (_Component) {
 exports.default = Menu;
 
 /***/ }),
-/* 224 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27470,7 +24824,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(9);
+var _axios = __webpack_require__(8);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -27562,6 +24916,2652 @@ var TopHeader = function (_Component) {
 }(_react.Component);
 
 exports.default = TopHeader;
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Banner = function (_Component) {
+  _inherits(Banner, _Component);
+
+  function Banner() {
+    _classCallCheck(this, Banner);
+
+    return _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).apply(this, arguments));
+  }
+
+  _createClass(Banner, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'banner' },
+        _react2.default.createElement(
+          'div',
+          { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+          _react2.default.createElement(
+            'div',
+            { className: 'carousel-inner', role: 'listbox' },
+            _react2.default.createElement(
+              'div',
+              { className: 'item active' },
+              _react2.default.createElement('img', { src: 'img/banner/banner-slider-1.jpg', alt: 'banner-slider-1' }),
+              _react2.default.createElement(
+                'div',
+                { className: 'carousel-caption banner-slider-inner banner-top-align' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'text-center' },
+                  _react2.default.createElement(
+                    'h1',
+                    { 'data-animation': 'animated fadeInDown delay-05s' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'Find your'
+                    ),
+                    'Dream House'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'hidden-xs' },
+                    'Lorem ipsum dolor sit amet, conconsectetuer adipiscing elit'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Get Started Now'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Learn More'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'item' },
+              _react2.default.createElement('img', { src: 'img/banner/banner-slider-2.jpg', alt: 'banner-slider-2' }),
+              _react2.default.createElement(
+                'div',
+                { className: 'carousel-caption banner-slider-inner banner-top-align' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'text-right' },
+                  _react2.default.createElement(
+                    'h1',
+                    { 'data-animation': 'animated fadeInDown delay-05s' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'Sweet Home For'
+                    ),
+                    _react2.default.createElement('br', null),
+                    ' Small Family'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Get Started Now'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Learn More'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'item' },
+              _react2.default.createElement('img', { src: 'img/banner/banner-slider-3.jpg', alt: 'banner-slider-3' }),
+              _react2.default.createElement(
+                'div',
+                { className: 'carousel-caption banner-slider-inner banner-top-align' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'text-left' },
+                  _react2.default.createElement(
+                    'h1',
+                    { 'data-animation': 'animated fadeInDown delay-05s' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'Best Place To'
+                    ),
+                    _react2.default.createElement('br', null),
+                    'Find Home'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Get Started Now'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#', className: 'btn button-md border-button-theme', 'data-animation': 'animated fadeInUp delay-05s' },
+                    'Learn More'
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'left carousel-control', href: 'index.html#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
+            _react2.default.createElement(
+              'span',
+              { className: 'slider-mover-left', 'aria-hidden': 'true' },
+              _react2.default.createElement('i', { className: 'fa fa-angle-left' })
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'sr-only' },
+              'Previous'
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'right carousel-control', href: 'index.html#carousel-example-generic', role: 'button', 'data-slide': 'next' },
+            _react2.default.createElement(
+              'span',
+              { className: 'slider-mover-right', 'aria-hidden': 'true' },
+              _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+            ),
+            _react2.default.createElement(
+              'span',
+              { className: 'sr-only' },
+              'Next'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Banner;
+}(_react.Component);
+
+exports.default = Banner;
+
+/***/ }),
+/* 215 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SearchArea = function (_Component) {
+  _inherits(SearchArea, _Component);
+
+  function SearchArea() {
+    _classCallCheck(this, SearchArea);
+
+    return _possibleConstructorReturn(this, (SearchArea.__proto__ || Object.getPrototypeOf(SearchArea)).apply(this, arguments));
+  }
+
+  _createClass(SearchArea, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'search-area' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'search-area-inner' },
+            _react2.default.createElement(
+              'div',
+              { className: 'search-contents ' },
+              _react2.default.createElement(
+                'div',
+                { className: 'row' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Area From'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '1000'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '800'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '600'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '400'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '200'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '100'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Property Status'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'For Sale'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'For Rent'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Location'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'United States'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'United Kingdom'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'American Samoa'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Belgium'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cameroon'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Canada'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Property Types'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Residential'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Commercial'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Land'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'row' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Bedrooms'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '1'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '2'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '3'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '4'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '6'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '7'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'select',
+                      { className: 'selectpicker search-fields', 'data-live-search': 'true', 'data-live-search-placeholder': 'Search value' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Bathrooms'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '1'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '2'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '3'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '4'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '5'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '6'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        '7'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'range-slider' },
+                      _react2.default.createElement('div', { 'data-min': '0', 'data-max': '150000', 'data-unit': 'USD', className: 'range-slider-ui ui-slider', 'aria-disabled': 'false' }),
+                      _react2.default.createElement('div', { className: 'clearfix' })
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-6 ' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement(
+                      'button',
+                      { className: 'search-button' },
+                      'Search'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return SearchArea;
+}(_react.Component);
+
+exports.default = SearchArea;
+
+/***/ }),
+/* 216 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _PropertyCard = __webpack_require__(217);
+
+var _PropertyCard2 = _interopRequireDefault(_PropertyCard);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FeaturedProperties = function (_Component) {
+  _inherits(FeaturedProperties, _Component);
+
+  function FeaturedProperties() {
+    _classCallCheck(this, FeaturedProperties);
+
+    return _possibleConstructorReturn(this, (FeaturedProperties.__proto__ || Object.getPrototypeOf(FeaturedProperties)).apply(this, arguments));
+  }
+
+  _createClass(FeaturedProperties, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'content-area featured-properties' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'main-title' },
+              _react2.default.createElement(
+                'h1',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Featured'
+                ),
+                ' Properties'
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              { className: 'list-inline-listing filters filters-listing-navigation' },
+              _react2.default.createElement(
+                'li',
+                { className: 'active btn filtr-button filtr', 'data-filter': 'all' },
+                'All'
+              ),
+              _react2.default.createElement(
+                'li',
+                { 'data-filter': '1', className: 'btn btn-inline filtr-button filtr' },
+                'House'
+              ),
+              _react2.default.createElement(
+                'li',
+                { 'data-filter': '2', className: 'btn btn-inline filtr-button filtr' },
+                'Office'
+              ),
+              _react2.default.createElement(
+                'li',
+                { 'data-filter': '3', className: 'btn btn-inline filtr-button filtr' },
+                'Apartment'
+              ),
+              _react2.default.createElement(
+                'li',
+                { 'data-filter': '4', className: 'btn btn-inline filtr-button filtr' },
+                'Residential'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'filtr-container' },
+                _react2.default.createElement(_PropertyCard2.default, null),
+                _react2.default.createElement(_PropertyCard2.default, null),
+                _react2.default.createElement(_PropertyCard2.default, null),
+                _react2.default.createElement(_PropertyCard2.default, null),
+                _react2.default.createElement(_PropertyCard2.default, null),
+                _react2.default.createElement(_PropertyCard2.default, null)
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return FeaturedProperties;
+}(_react.Component);
+
+exports.default = FeaturedProperties;
+
+/***/ }),
+/* 217 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PropertyCard = function (_Component) {
+  _inherits(PropertyCard, _Component);
+
+  function PropertyCard() {
+    _classCallCheck(this, PropertyCard);
+
+    return _possibleConstructorReturn(this, (PropertyCard.__proto__ || Object.getPrototypeOf(PropertyCard)).apply(this, arguments));
+  }
+
+  _createClass(PropertyCard, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item', 'data-category': '1, 2, 3' },
+        _react2.default.createElement(
+          'div',
+          { className: 'property' },
+          _react2.default.createElement(
+            'a',
+            { href: 'properties-details.html', className: 'property-img' },
+            _react2.default.createElement(
+              'div',
+              { className: 'property-tag button alt featured' },
+              'Destacada'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'property-tag button sale' },
+              'Venta'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'property-price' },
+              '$150.000'
+            ),
+            _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'property-content' },
+            _react2.default.createElement(
+              'h1',
+              { className: 'title' },
+              _react2.default.createElement(
+                'a',
+                { href: 'properties-details.html' },
+                'titulo de publicacion'
+              )
+            ),
+            _react2.default.createElement(
+              'h3',
+              { className: 'property-address' },
+              _react2.default.createElement(
+                'a',
+                { href: 'properties-details.html' },
+                _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                'Direccion'
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              { className: 'facilities-list clearfix' },
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'tama\xF1o terreno'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '3 Beds'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-monitor' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'TV'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '2 Baths'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '1 Garage'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement('i', { className: 'flaticon-building' }),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '3 Balcony'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'property-footer' },
+              _react2.default.createElement(
+                'span',
+                { className: 'left' },
+                _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                '5 days ago'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'right' },
+                _react2.default.createElement(
+                  'a',
+                  { href: 'index.html#' },
+                  _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'index.html#' },
+                  _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return PropertyCard;
+}(_react.Component);
+
+exports.default = PropertyCard;
+
+/***/ }),
+/* 218 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Services = function (_Component) {
+  _inherits(Services, _Component);
+
+  function Services() {
+    _classCallCheck(this, Services);
+
+    return _possibleConstructorReturn(this, (Services.__proto__ || Object.getPrototypeOf(Services)).apply(this, arguments));
+  }
+
+  _createClass(Services, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'mrg-btm-100 our-service' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'main-title' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              _react2.default.createElement(
+                'span',
+                null,
+                'What are you'
+              ),
+              'looking for?'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row mgn-btm wow' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-04s' },
+              _react2.default.createElement(
+                'div',
+                { className: 'content' },
+                _react2.default.createElement('i', { className: 'flaticon-apartment' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Apartments'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-04s' },
+              _react2.default.createElement(
+                'div',
+                { className: 'content' },
+                _react2.default.createElement('i', { className: 'flaticon-internet' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Houses'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight delay-04s' },
+              _react2.default.createElement(
+                'div',
+                { className: 'content' },
+                _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Garages'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight delay-04s' },
+              _react2.default.createElement(
+                'div',
+                { className: 'content' },
+                _react2.default.createElement('i', { className: 'flaticon-symbol' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Commercial'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: 'index.html#', className: 'btn button-md button-theme' },
+            'Read More'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Services;
+}(_react.Component);
+
+exports.default = Services;
+
+/***/ }),
+/* 219 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RecentlyProperties = function (_Component) {
+    _inherits(RecentlyProperties, _Component);
+
+    function RecentlyProperties() {
+        _classCallCheck(this, RecentlyProperties);
+
+        return _possibleConstructorReturn(this, (RecentlyProperties.__proto__ || Object.getPrototypeOf(RecentlyProperties)).apply(this, arguments));
+    }
+
+    _createClass(RecentlyProperties, [{
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'mrg-btm-70 recently-properties chevron-icon' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'main-title' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Recently'
+                            ),
+                            ' Properties'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'carousel our-partners slide', id: 'ourPartners2' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-lg-12 mrg-btm-30' },
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'prev' },
+                                    _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
+                                ),
+                                _react2.default.createElement(
+                                    'a',
+                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'next' },
+                                    _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'carousel-inner' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'item active' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'property' },
+                                            _react2.default.createElement(
+                                                'a',
+                                                { href: 'properties-details.html', className: 'property-img' },
+                                                _react2.default.createElement('img', { src: 'img/properties/properties-3.jpg', alt: 'properties-3', className: 'img-responsive' })
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'property-content' },
+                                                _react2.default.createElement(
+                                                    'h1',
+                                                    { className: 'title' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        'Modern Family Home'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'h3',
+                                                    { className: 'property-address' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                                                        '123 Kathal St. Tampa City,'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'ul',
+                                                    { className: 'facilities-list clearfix' },
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '4800 sq ft'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '3 Beds'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            ' 2 Baths'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '1 Garage'
+                                                        )
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'property-footer' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'left' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                                                        ' 5 days ago'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'right' },
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'item' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'property' },
+                                            _react2.default.createElement(
+                                                'a',
+                                                { href: 'properties-details.html', className: 'property-img' },
+                                                _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'property-content' },
+                                                _react2.default.createElement(
+                                                    'h1',
+                                                    { className: 'title' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.htmll.html' },
+                                                        'Beautiful Single Home'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'h3',
+                                                    { className: 'property-address' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                                                        '123 Kathal St. Tampa City,'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'ul',
+                                                    { className: 'facilities-list clearfix' },
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '4800 sq ft'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '3 Beds'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            ' 2 Baths'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '1 Garage'
+                                                        )
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'property-footer' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'left' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                                                        ' 5 days ago'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'right' },
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'item' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'property' },
+                                            _react2.default.createElement(
+                                                'a',
+                                                { href: 'properties-details.html', className: 'property-img' },
+                                                _react2.default.createElement('img', { src: 'img/properties/properties-6.jpg', alt: 'properties-6', className: 'img-responsive' })
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'property-content' },
+                                                _react2.default.createElement(
+                                                    'h1',
+                                                    { className: 'title' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        'Park Avenue'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'h3',
+                                                    { className: 'property-address' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                                                        '123 Kathal St. Tampa City,'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'ul',
+                                                    { className: 'facilities-list clearfix' },
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '4800 sq ft'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '3 Beds'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            ' 2 Baths'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '1 Garage'
+                                                        )
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'property-footer' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'left' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                                                        ' 5 days ago'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'right' },
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'item' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'property' },
+                                            _react2.default.createElement(
+                                                'a',
+                                                { href: 'properties-details.html', className: 'property-img' },
+                                                _react2.default.createElement('img', { src: 'img/properties/properties-2.jpg', alt: 'properties-2', className: 'img-responsive' })
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'property-content' },
+                                                _react2.default.createElement(
+                                                    'h1',
+                                                    { className: 'title' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        'Sweet Family Home'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'h3',
+                                                    { className: 'property-address' },
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'properties-details.html' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                                                        '123 Kathal St. Tampa City,'
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'ul',
+                                                    { className: 'facilities-list clearfix' },
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '4800 sq ft'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '3 Beds'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            ' 2 Baths'
+                                                        )
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'li',
+                                                        null,
+                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            null,
+                                                            '1 Garage'
+                                                        )
+                                                    )
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'property-footer' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'left' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                                                        ' 5 days ago'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'right' },
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                                                        ),
+                                                        _react2.default.createElement(
+                                                            'a',
+                                                            { href: 'index.html#' },
+                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return RecentlyProperties;
+}(_react.Component);
+
+exports.default = RecentlyProperties;
+
+/***/ }),
+/* 220 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PopularPlaces = function (_Component) {
+    _inherits(PopularPlaces, _Component);
+
+    function PopularPlaces() {
+        _classCallCheck(this, PopularPlaces);
+
+        return _possibleConstructorReturn(this, (PopularPlaces.__proto__ || Object.getPrototypeOf(PopularPlaces)).apply(this, arguments));
+    }
+
+    _createClass(PopularPlaces, [{
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'categories' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'main-title' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Popular'
+                            ),
+                            ' Places'
+                        )
+                    ),
+                    _react2.default.createElement('div', { className: 'clearfix' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row wow' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-7 col-md-7 col-sm-12' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'row' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-6 col-pad wow fadeInLeft delay-04s' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'category' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'category_bg_box cat-1-bg' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'category-overlay' },
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'category-content' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-title' },
+                                                        'Florida'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-subtitle' },
+                                                        '14 Properties'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'index.html#', className: 'btn button-sm button-theme' },
+                                                        'View All'
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-6 col-pad wow fadeInLeft delay-04s' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'category' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'category_bg_box cat-2-bg' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'category-overlay' },
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'category-content' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-title' },
+                                                        'California'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-subtitle' },
+                                                        '14 Properties'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'index.html#', className: 'btn button-sm button-theme ' },
+                                                        'View All'
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12 col-pad wow fadeInUp delay-04s' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'category' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'category_bg_box cat-3-bg' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'category-overlay' },
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'category-content' },
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-title' },
+                                                        'New York'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'category-subtitle' },
+                                                        '27 Properties'
+                                                    ),
+                                                    _react2.default.createElement('br', null),
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: 'index.html#', className: 'btn button-sm button-theme ' },
+                                                        'View All'
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-5 col-md-5 col-sm-12 col-pad wow fadeInRight delay-04s' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'category' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'category_bg_box category_long_bg cat-4-bg' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'category-overlay' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'category-content' },
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'category-title' },
+                                                'San Francisco'
+                                            ),
+                                            _react2.default.createElement('br', null),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'category-subtitle' },
+                                                '14 Properties'
+                                            ),
+                                            _react2.default.createElement('br', null),
+                                            _react2.default.createElement(
+                                                'a',
+                                                { href: 'index.html#', className: 'btn button-sm button-theme ' },
+                                                'View All'
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return PopularPlaces;
+}(_react.Component);
+
+exports.default = PopularPlaces;
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Testimonial = function (_Component) {
+  _inherits(Testimonial, _Component);
+
+  function Testimonial() {
+    _classCallCheck(this, Testimonial);
+
+    return _possibleConstructorReturn(this, (Testimonial.__proto__ || Object.getPrototypeOf(Testimonial)).apply(this, arguments));
+  }
+
+  _createClass(Testimonial, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'testimonial-section testimonial-2 testimonial-3' },
+        _react2.default.createElement(
+          'div',
+          { className: 'testimonial-section-inner' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement('div', { className: 'main-title' }),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-12' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'testimonials' },
+                  _react2.default.createElement(
+                    'div',
+                    { id: 'carouse3-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'carousel-inner', role: 'listbox' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'item content clearfix active' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'row' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'avatar' },
+                              _react2.default.createElement('img', { src: 'img/avatar/avatar-1.jpg', alt: 'avatar-1', className: 'img-responsive' })
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'testimonials-info' },
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'text' },
+                                _react2.default.createElement(
+                                  'sup',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
+                                ),
+                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
+                                _react2.default.createElement(
+                                  'sub',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
+                                )
+                              ),
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'author-name' },
+                                'John Antony'
+                              ),
+                              _react2.default.createElement(
+                                'ul',
+                                { className: 'rating' },
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
+                                )
+                              )
+                            )
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'item content clearfix' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'row' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'avatar' },
+                              _react2.default.createElement('img', { src: 'img/avatar/avatar-2.jpg', alt: 'avatar-2', className: 'img-responsive' })
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'testimonials-info' },
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'text' },
+                                _react2.default.createElement(
+                                  'sup',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
+                                ),
+                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
+                                _react2.default.createElement(
+                                  'sub',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
+                                )
+                              ),
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'author-name' },
+                                'John Mery'
+                              ),
+                              _react2.default.createElement(
+                                'ul',
+                                { className: 'rating' },
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
+                                )
+                              )
+                            )
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'item content clearfix' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'row' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'avatar' },
+                              _react2.default.createElement('img', { src: 'img/avatar/avatar-4.jpg', alt: 'avatar-4', className: 'img-responsive' })
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'testimonials-info' },
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'text' },
+                                _react2.default.createElement(
+                                  'sup',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
+                                ),
+                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
+                                _react2.default.createElement(
+                                  'sub',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
+                                )
+                              ),
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'author-name' },
+                                'John Top'
+                              ),
+                              _react2.default.createElement(
+                                'ul',
+                                { className: 'rating' },
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
+                                )
+                              )
+                            )
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'item content clearfix' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'row' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-3 col-md-3 col-sm-3 col-xs-12' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'avatar' },
+                              _react2.default.createElement('img', { src: 'img/avatar/avatar-3.jpg', alt: 'avatar-3', className: 'img-responsive' })
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'col-lg-9 col-md-9 col-sm-9 col-xs-12 ' },
+                            _react2.default.createElement(
+                              'div',
+                              { className: 'testimonials-info' },
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'text' },
+                                _react2.default.createElement(
+                                  'sup',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-left' })
+                                ),
+                                'Aliquam dictum elit vitae mauris facilisis, at dictum urna dignissim. Donec vel lectus vel felis lacinia luctus vitae iaculis arcu. Mauris mattis, massa eu porta ultricies.',
+                                _react2.default.createElement(
+                                  'sup',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-quote-right' })
+                                )
+                              ),
+                              _react2.default.createElement(
+                                'div',
+                                { className: 'author-name' },
+                                'John Pitarshon'
+                              ),
+                              _react2.default.createElement(
+                                'ul',
+                                { className: 'rating' },
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star' })
+                                ),
+                                _react2.default.createElement(
+                                  'li',
+                                  null,
+                                  _react2.default.createElement('i', { className: 'fa fa-star-half-full' })
+                                )
+                              )
+                            )
+                          )
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'a',
+                      { className: 'left carousel-control', href: 'index.html#carouse3-example-generic', role: 'button', 'data-slide': 'prev' },
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'slider-mover-left', 'aria-hidden': 'true' },
+                        _react2.default.createElement('i', { className: 'fa fa-angle-left' })
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sr-only' },
+                        'Previous'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'a',
+                      { className: 'right carousel-control', href: 'index.html#carouse3-example-generic', role: 'button', 'data-slide': 'next' },
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'slider-mover-right', 'aria-hidden': 'true' },
+                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+                      ),
+                      _react2.default.createElement(
+                        'span',
+                        { className: 'sr-only' },
+                        'Next'
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Testimonial;
+}(_react.Component);
+
+exports.default = Testimonial;
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BrandsAndPartners = function (_Component) {
+  _inherits(BrandsAndPartners, _Component);
+
+  function BrandsAndPartners() {
+    _classCallCheck(this, BrandsAndPartners);
+
+    return _possibleConstructorReturn(this, (BrandsAndPartners.__proto__ || Object.getPrototypeOf(BrandsAndPartners)).apply(this, arguments));
+  }
+
+  _createClass(BrandsAndPartners, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'partners-block' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'h3',
+            null,
+            'Brands & Partners'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-md-12' },
+              _react2.default.createElement(
+                'div',
+                { className: 'carousel our-partners slide', id: 'ourPartners' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'carousel-inner' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'item active' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'col-xs-12 col-sm-6 col-md-3' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'index.html#' },
+                        _react2.default.createElement('img', { src: 'img/brand/audiojungle.png', alt: 'audiojungle' })
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'item' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'col-xs-12 col-sm-6 col-md-3' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'index.html#' },
+                        _react2.default.createElement('img', { src: 'img/brand/themeforest.png', alt: 'themeforest' })
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'item' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'col-xs-12 col-sm-6 col-md-3' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'index.html#' },
+                        _react2.default.createElement('img', { src: 'img/brand/tuts.png', alt: 'tuts' })
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'item' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'col-xs-12 col-sm-6 col-md-3' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'index.html#' },
+                        _react2.default.createElement('img', { src: 'img/brand/graphicriver.png', alt: 'graphicriver' })
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'item' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'col-xs-12 col-sm-6 col-md-3' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'index.html#' },
+                        _react2.default.createElement('img', { src: 'img/brand/codecanyon.png', alt: 'codecanyon' })
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { className: 'left carousel-control', href: 'index.html#ourPartners', 'data-slide': 'prev' },
+                  _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { className: 'right carousel-control', href: 'index.html#ourPartners', 'data-slide': 'next' },
+                  _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return BrandsAndPartners;
+}(_react.Component);
+
+exports.default = BrandsAndPartners;
+
+/***/ }),
+/* 223 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Counter = function (_Component) {
+  _inherits(Counter, _Component);
+
+  function Counter() {
+    _classCallCheck(this, Counter);
+
+    return _possibleConstructorReturn(this, (Counter.__proto__ || Object.getPrototypeOf(Counter)).apply(this, arguments));
+  }
+
+  _createClass(Counter, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'counters' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-md-3 col-sm-6 bordered-right' },
+              _react2.default.createElement(
+                'div',
+                { className: 'counter-box' },
+                _react2.default.createElement('i', { className: 'flaticon-tag' }),
+                _react2.default.createElement(
+                  'h1',
+                  { className: 'counter' },
+                  '967'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Listings For Sale'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-md-3 col-sm-6 bordered-right' },
+              _react2.default.createElement(
+                'div',
+                { className: 'counter-box' },
+                _react2.default.createElement('i', { className: 'flaticon-symbol-1' }),
+                _react2.default.createElement(
+                  'h1',
+                  { className: 'counter' },
+                  '1276'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Listings For Rent'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-md-3 col-sm-6 bordered-right' },
+              _react2.default.createElement(
+                'div',
+                { className: 'counter-box' },
+                _react2.default.createElement('i', { className: 'flaticon-people' }),
+                _react2.default.createElement(
+                  'h1',
+                  { className: 'counter' },
+                  '396'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Agents'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-md-3 col-sm-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'counter-box' },
+                _react2.default.createElement('i', { className: 'flaticon-people-1' }),
+                _react2.default.createElement(
+                  'h1',
+                  { className: 'counter' },
+                  '177'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Brokers'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Counter;
+}(_react.Component);
+
+exports.default = Counter;
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(8);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_Component) {
+  _inherits(Footer, _Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'footer',
+        { className: 'main-footer clearfix' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'footer-top' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-5 col-md-4 col-sm-3 col-xs-12' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'logo-2' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html' },
+                    _react2.default.createElement('img', { src: 'img/logos/footer-logo.png', alt: 'footer-logo' })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-4  col-md-4 col-sm-5 col-xs-12' },
+                _react2.default.createElement(
+                  'form',
+                  { action: '#', method: 'post' },
+                  _react2.default.createElement('input', { type: 'text', className: 'form-contact', name: 'email', placeholder: 'Enter your email' }),
+                  _react2.default.createElement(
+                    'button',
+                    { type: 'submit', name: 'submitNewsletter', className: 'btn btn-default button-small' },
+                    _react2.default.createElement('i', { className: 'fa fa-paper-plane' })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-3 col-md-4 col-sm-4 col-xs-12' },
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'social-list clearfix' },
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'index.html#' },
+                      _react2.default.createElement('i', { className: 'fa fa-rss' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'index.html#' },
+                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'index.html#' },
+                      _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'index.html#' },
+                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'index.html#' },
+                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'copy-right' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            '\xA9 2017',
+            _react2.default.createElement(
+              'a',
+              { href: 'http://themevessel.com/', target: '_blank' },
+              'Theme Vessel'
+            ),
+            '. Trademarks and brands are the property of their respective owners.'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react.Component);
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);

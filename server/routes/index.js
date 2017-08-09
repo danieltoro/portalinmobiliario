@@ -5,6 +5,7 @@ import basicController from './../controllers/basicController'
 import userController from './../controllers/userController'
 import postController from './../controllers/postController'
 import commentController from './../controllers/commentController'
+import propertyController from './../controllers/propertyController'
 
 const routes = express()
 
@@ -21,5 +22,9 @@ routes.get('/posts', postController.getAll)
 
 // Comment Routes
 routes.post('/comment', commentController.post)
+
+// Property Routes
+routes.post('/property', propertyController.post)
+routes.get('/properties', propertyController.getAll)
 
 export default routes

@@ -62,7 +62,7 @@ class PropertyCard extends Component {
             <div className="property-footer">
               <span className="left">
                 <i className="fa fa-calendar-o icon"></i>
-                5 days ago</span>
+                  5 days ago</span>
               <span className="right">
                 <a href="index.html#">
                   <i className="fa fa-heart-o icon"></i>

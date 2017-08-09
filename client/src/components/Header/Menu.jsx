@@ -142,7 +142,7 @@ class Menu extends Component {
                       <ul className="nav navbar-nav navbar-right rightside-navbar">
                           <li>
                               <a href="submit-property.html" className="button">
-                                  Submit Property
+                                  Publicar Propiedad
                               </a>
                           </li>
                       </ul>
