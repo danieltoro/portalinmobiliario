@@ -24,7 +24,7 @@ class Menu extends Component {
                   <div className="navbar-collapse collapse" role="navigation" aria-expanded="true" id="app-navigation">
                       <ul className="nav navbar-nav">
                           <li className="dropdown active">
-                              <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                              <a data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                   Home<span className="caret"></span>
                               </a>
                               <ul className="dropdown-menu">
@@ -36,12 +36,12 @@ class Menu extends Component {
                               </ul>
                           </li>
                           <li className="dropdown">
-                              <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                              <a data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                   Properties<span className="caret"></span>
                               </a>
                               <ul className="dropdown-menu">
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Properties List</a>
+                                      <a>Properties List</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="properties-list-rightside.html">Properties List Right Sidebar</a></li>
                                           <li><a href="properties-list-leftside.html">Properties List Left Sidebar</a></li>
@@ -49,7 +49,7 @@ class Menu extends Component {
                                       </ul>
                                   </li>
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Properties Grid</a>
+                                      <a>Properties Grid</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="properties-grid-rightside.html">Properties Grid Right Sidebar</a></li>
                                           <li><a href="properties-grid-leftside.html">Properties Grid Left Sidebar</a></li>
@@ -57,7 +57,7 @@ class Menu extends Component {
                                       </ul>
                                   </li>
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Map View</a>
+                                      <a>Map View</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="properties-map-leftside-list.html">Map Left Sidebar List</a></li>
                                           <li><a href="properties-map-rightside-list.html">Map Right Sidebar List</a></li>
@@ -67,7 +67,7 @@ class Menu extends Component {
                                       </ul>
                                   </li>
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Property Detail</a>
+                                      <a>Property Detail</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="properties-details.html">Property Detail 1</a></li>
                                           <li><a href="properties-details-2.html">Property Detail 2</a></li>
@@ -77,7 +77,7 @@ class Menu extends Component {
                               </ul>
                           </li>
                           <li className="dropdown">
-                              <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                              <a data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                   Agents<span className="caret"></span>
                               </a>
                               <ul className="dropdown-menu">
@@ -89,7 +89,7 @@ class Menu extends Component {
                               </ul>
                           </li>
                           <li className="dropdown">
-                              <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                              <a data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                   Blog<span className="caret"></span>
                               </a>
                               <ul className="dropdown-menu">
@@ -101,12 +101,12 @@ class Menu extends Component {
                               </ul>
                           </li>
                           <li className="dropdown">
-                              <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false">
+                              <a data-toggle="dropdown" data-submenu="" aria-expanded="false">
                                   Pages<span className="caret"></span>
                               </a>
                               <ul className="dropdown-menu">
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Extras</a>
+                                      <a>Extras</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="typography.html">Typography</a></li>
                                           <li><a href="pricing-tables.html">Pricing Tables</a></li>
@@ -115,7 +115,7 @@ class Menu extends Component {
                                       </ul>
                                   </li>
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">User Profile</a>
+                                      <a>User Profile</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="user-profile.html">User profile</a></li>
                                           <li><a href="my-properties.html">My Properties</a></li>
@@ -124,7 +124,7 @@ class Menu extends Component {
                                       </ul>
                                   </li>
                                   <li className="dropdown-submenu">
-                                      <a tabindex="0">Contact</a>
+                                      <a>Contact</a>
                                       <ul className="dropdown-menu">
                                           <li><a href="contact.html">Contact</a></li>
                                           <li><a href="contact-2.html">Contact 2</a></li>

@@ -3,24 +3,41 @@ import request from 'axios'
 
 class PropertyCard extends Component {
 
+  constructor() {
+    super()
+    this.state = {
+      properties: []
+    }
+  }
+
+  componentDidMount() {
+    request.get('/api/properties').then((res) => {
+      this.setState({properties: res.data.data})
+      console.log(this.state.properties);
+    }).catch((err) => {
+      console.log(err);
+    })
+  }
+
   render() {
 
-    return (
+    var properties = this.state.properties.map((property, i) => {
 
-      <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item" data-category="1, 2, 3">
+      return <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item" data-category="1, 2, 3" key={i}>
+
         <div className="property">
 
           <a href="properties-details.html" className="property-img">
             <div className="property-tag button alt featured">Destacada</div>
-            <div className="property-tag button sale">Venta</div>
-            <div className="property-price">$150.000</div>
+            <div className="property-tag button sale">{property.status}</div>
+            <div className="property-price">${property.price}</div>
             <img src="img/properties/properties-1.jpg" alt="properties-1" className="img-responsive"></img>
           </a>
 
           <div className="property-content">
 
             <h1 className="title">
-              <a href="properties-details.html">titulo de publicacion</a>
+              <a href="properties-details.html">{property.title}</a>
             </h1>
 
             <h3 className="property-address">
@@ -32,7 +49,7 @@ class PropertyCard extends Component {
             <ul className="facilities-list clearfix">
               <li>
                 <i className="flaticon-square-layouting-with-black-square-in-east-area"></i>
-                <span>tamaño terreno</span>
+                <span>{property.size}</span>
               </li>
               <li>
                 <i className="flaticon-bed"></i>
@@ -62,7 +79,7 @@ class PropertyCard extends Component {
             <div className="property-footer">
               <span className="left">
                 <i className="fa fa-calendar-o icon"></i>
-                  5 days ago</span>
+                5 days ago</span>
               <span className="right">
                 <a href="index.html#">
                   <i className="fa fa-heart-o icon"></i>
@@ -75,6 +92,16 @@ class PropertyCard extends Component {
           </div>
         </div>
       </div>
+    })
+
+    return (
+
+      <div className="row">
+        <div className="filtr-container">
+          {properties}
+        </div>
+      </div>
+
     )
   }
 }

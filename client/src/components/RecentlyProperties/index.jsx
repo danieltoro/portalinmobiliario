@@ -12,7 +12,7 @@ class RecentlyProperties extends Component {
           <div className="container">
 
               <div className="main-title">
-                  <h1><span>Recently</span> Properties</h1>
+                  <h1><span>Propiedades</span> Recientes</h1>
               </div>
               <div className="row">
                   <div className="carousel our-partners slide" id="ourPartners2">

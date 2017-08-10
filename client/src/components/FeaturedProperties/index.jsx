@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import request from 'axios'
 
 import PropertyCard from './PropertyCard.jsx'
 
@@ -22,16 +21,8 @@ class FeaturedProperties extends Component {
               <li data-filter="3" className="btn btn-inline filtr-button filtr">Apartment</li>
               <li data-filter="4" className="btn btn-inline filtr-button filtr">Residential</li>
             </ul>
-            <div className="row">
-              <div className="filtr-container">
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-              </div>
-            </div>
+          <PropertyCard />
+
           </div>
         </div>
       </div>

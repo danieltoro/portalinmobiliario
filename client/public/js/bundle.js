@@ -733,6 +733,16 @@ module.exports = ReactDOMComponentTree;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -770,23 +780,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(19);
-
-
-/***/ }),
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(193);
-
-/***/ }),
-/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1169,6 +1163,12 @@ var ReactComponentTreeHook = {
 
 module.exports = ReactComponentTreeHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(193);
 
 /***/ }),
 /* 10 */
@@ -4454,7 +4454,7 @@ module.exports = SyntheticMouseEvent;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var DOMNamespaces = __webpack_require__(42);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
@@ -5438,7 +5438,7 @@ module.exports = getEventTarget;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var useHasFeature;
 if (ExecutionEnvironment.canUseDOM) {
@@ -7324,7 +7324,7 @@ module.exports = getIteratorFn;
 
 
 var ReactCurrentOwner = __webpack_require__(13);
-var ReactComponentTreeHook = __webpack_require__(9);
+var ReactComponentTreeHook = __webpack_require__(8);
 var ReactElement = __webpack_require__(17);
 
 var checkReactTypeSpec = __webpack_require__(96);
@@ -7749,7 +7749,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var contentKey = null;
 
@@ -8153,7 +8153,7 @@ module.exports = ViewportMetrics;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var escapeTextContentForBrowser = __webpack_require__(33);
 var setInnerHTML = __webpack_require__(32);
 
@@ -10435,7 +10435,7 @@ module.exports = Cancel;
 "use strict";
 
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -11217,7 +11217,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(9);
+  ReactComponentTreeHook = __webpack_require__(8);
 }
 
 var loggedTypeFailures = {};
@@ -11259,7 +11259,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(9);
+            ReactComponentTreeHook = __webpack_require__(8);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -12993,7 +12993,7 @@ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVT
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ExecutionEnvironment = __webpack_require__(6);
+  var ExecutionEnvironment = __webpack_require__(7);
   if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
     // First check if devtools is not installed
     if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
@@ -13229,7 +13229,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var FallbackCompositionState = __webpack_require__(111);
 var SyntheticCompositionEvent = __webpack_require__(112);
 var SyntheticInputEvent = __webpack_require__(113);
@@ -13802,7 +13802,7 @@ module.exports = SyntheticInputEvent;
 
 var EventPluginHub = __webpack_require__(24);
 var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(14);
 var SyntheticEvent = __webpack_require__(15);
@@ -14313,8 +14313,8 @@ module.exports = ReactOwner;
 
 var ReactInvalidSetStateWarningHook = __webpack_require__(118);
 var ReactHostOperationHistoryHook = __webpack_require__(119);
-var ReactComponentTreeHook = __webpack_require__(9);
-var ExecutionEnvironment = __webpack_require__(6);
+var ReactComponentTreeHook = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var performanceNow = __webpack_require__(120);
 var warning = __webpack_require__(2);
@@ -14799,7 +14799,7 @@ module.exports = performanceNow;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var performance;
 
@@ -15237,7 +15237,7 @@ module.exports = ReactComponentBrowserEnvironment;
 var _prodInvariant = __webpack_require__(3);
 
 var DOMLazyTree = __webpack_require__(22);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var createNodesFromMarkup = __webpack_require__(127);
 var emptyFunction = __webpack_require__(12);
@@ -15289,7 +15289,7 @@ module.exports = Danger;
 
 /*eslint-disable fb-www/unsafe-html*/
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var createArrayFromMixed = __webpack_require__(128);
 var getMarkupWrap = __webpack_require__(129);
@@ -15511,7 +15511,7 @@ module.exports = createArrayFromMixed;
 
 /*eslint-disable fb-www/unsafe-html */
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var invariant = __webpack_require__(1);
 
@@ -16694,7 +16694,7 @@ module.exports = AutoFocusUtils;
 
 
 var CSSProperty = __webpack_require__(71);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(10);
 
 var camelizeStyleName = __webpack_require__(134);
@@ -17266,7 +17266,7 @@ module.exports = ReactEventEmitterMixin;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 /**
  * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -18427,7 +18427,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(9);
+  ReactComponentTreeHook = __webpack_require__(8);
 }
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -18435,7 +18435,7 @@ function instantiateChild(childInstances, child, name, selfDebugID) {
   var keyUnique = childInstances[name] === undefined;
   if (process.env.NODE_ENV !== 'production') {
     if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = __webpack_require__(9);
+      ReactComponentTreeHook = __webpack_require__(8);
     }
     if (!keyUnique) {
       process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -19492,7 +19492,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(9);
+  ReactComponentTreeHook = __webpack_require__(8);
 }
 
 var loggedTypeFailures = {};
@@ -19534,7 +19534,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(9);
+            ReactComponentTreeHook = __webpack_require__(8);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -19710,7 +19710,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(9);
+  ReactComponentTreeHook = __webpack_require__(8);
 }
 
 /**
@@ -19726,7 +19726,7 @@ function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID
     var keyUnique = result[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
       if (!ReactComponentTreeHook) {
-        ReactComponentTreeHook = __webpack_require__(9);
+        ReactComponentTreeHook = __webpack_require__(8);
       }
       if (!keyUnique) {
         process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -20471,7 +20471,7 @@ module.exports = ReactDefaultBatchingStrategy;
 var _assign = __webpack_require__(4);
 
 var EventListener = __webpack_require__(80);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var PooledClass = __webpack_require__(18);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(14);
@@ -20895,7 +20895,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 
 var getNodeForCharacterOffset = __webpack_require__(166);
 var getTextContentAccessor = __webpack_require__(63);
@@ -21604,7 +21604,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(6);
+var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(81);
 var SyntheticEvent = __webpack_require__(15);
@@ -22828,7 +22828,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 var DOMProperty = __webpack_require__(16);
 var EventPluginRegistry = __webpack_require__(29);
-var ReactComponentTreeHook = __webpack_require__(9);
+var ReactComponentTreeHook = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
 
@@ -22944,7 +22944,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactComponentTreeHook = __webpack_require__(9);
+var ReactComponentTreeHook = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
 
@@ -22994,7 +22994,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 var DOMProperty = __webpack_require__(16);
-var ReactComponentTreeHook = __webpack_require__(9);
+var ReactComponentTreeHook = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
 
@@ -23088,11 +23088,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -24086,11 +24086,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -24150,11 +24150,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -24220,7 +24220,7 @@ var Menu = function (_Component) {
                                     { className: 'dropdown active' },
                                     _react2.default.createElement(
                                         'a',
-                                        { tabindex: '0', 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
+                                        { 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
                                         'Home',
                                         _react2.default.createElement('span', { className: 'caret' })
                                     ),
@@ -24279,7 +24279,7 @@ var Menu = function (_Component) {
                                     { className: 'dropdown' },
                                     _react2.default.createElement(
                                         'a',
-                                        { tabindex: '0', 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
+                                        { 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
                                         'Properties',
                                         _react2.default.createElement('span', { className: 'caret' })
                                     ),
@@ -24291,7 +24291,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Properties List'
                                             ),
                                             _react2.default.createElement(
@@ -24331,7 +24331,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Properties Grid'
                                             ),
                                             _react2.default.createElement(
@@ -24371,7 +24371,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Map View'
                                             ),
                                             _react2.default.createElement(
@@ -24429,7 +24429,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Property Detail'
                                             ),
                                             _react2.default.createElement(
@@ -24471,7 +24471,7 @@ var Menu = function (_Component) {
                                     { className: 'dropdown' },
                                     _react2.default.createElement(
                                         'a',
-                                        { tabindex: '0', 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
+                                        { 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
                                         'Agents',
                                         _react2.default.createElement('span', { className: 'caret' })
                                     ),
@@ -24530,7 +24530,7 @@ var Menu = function (_Component) {
                                     { className: 'dropdown' },
                                     _react2.default.createElement(
                                         'a',
-                                        { tabindex: '0', 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
+                                        { 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
                                         'Blog',
                                         _react2.default.createElement('span', { className: 'caret' })
                                     ),
@@ -24589,7 +24589,7 @@ var Menu = function (_Component) {
                                     { className: 'dropdown' },
                                     _react2.default.createElement(
                                         'a',
-                                        { tabindex: '0', 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
+                                        { 'data-toggle': 'dropdown', 'data-submenu': '', 'aria-expanded': 'false' },
                                         'Pages',
                                         _react2.default.createElement('span', { className: 'caret' })
                                     ),
@@ -24601,7 +24601,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Extras'
                                             ),
                                             _react2.default.createElement(
@@ -24650,7 +24650,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'User Profile'
                                             ),
                                             _react2.default.createElement(
@@ -24699,7 +24699,7 @@ var Menu = function (_Component) {
                                             { className: 'dropdown-submenu' },
                                             _react2.default.createElement(
                                                 'a',
-                                                { tabindex: '0' },
+                                                null,
                                                 'Contact'
                                             ),
                                             _react2.default.createElement(
@@ -24820,11 +24820,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -24930,11 +24930,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -25126,11 +25126,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -25484,13 +25484,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(8);
-
-var _axios2 = _interopRequireDefault(_axios);
 
 var _PropertyCard = __webpack_require__(217);
 
@@ -25569,20 +25565,7 @@ var FeaturedProperties = function (_Component) {
                 'Residential'
               )
             ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'filtr-container' },
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null),
-                _react2.default.createElement(_PropertyCard2.default, null)
-              )
-            )
+            _react2.default.createElement(_PropertyCard2.default, null)
           )
         )
       );
@@ -25607,11 +25590,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -25629,150 +25612,181 @@ var PropertyCard = function (_Component) {
   function PropertyCard() {
     _classCallCheck(this, PropertyCard);
 
-    return _possibleConstructorReturn(this, (PropertyCard.__proto__ || Object.getPrototypeOf(PropertyCard)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (PropertyCard.__proto__ || Object.getPrototypeOf(PropertyCard)).call(this));
+
+    _this.state = {
+      properties: []
+    };
+    return _this;
   }
 
   _createClass(PropertyCard, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      _axios2.default.get('/api/properties').then(function (res) {
+        _this2.setState({ properties: res.data.data });
+        console.log(_this2.state.properties);
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item', 'data-category': '1, 2, 3' },
-        _react2.default.createElement(
+      var properties = this.state.properties.map(function (property, i) {
+
+        return _react2.default.createElement(
           'div',
-          { className: 'property' },
-          _react2.default.createElement(
-            'a',
-            { href: 'properties-details.html', className: 'property-img' },
-            _react2.default.createElement(
-              'div',
-              { className: 'property-tag button alt featured' },
-              'Destacada'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'property-tag button sale' },
-              'Venta'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'property-price' },
-              '$150.000'
-            ),
-            _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
-          ),
+          { className: 'col-lg-4 col-md-4 col-sm-6 col-xs-12  filtr-item', 'data-category': '1, 2, 3', key: i },
           _react2.default.createElement(
             'div',
-            { className: 'property-content' },
+            { className: 'property' },
             _react2.default.createElement(
-              'h1',
-              { className: 'title' },
+              'a',
+              { href: 'properties-details.html', className: 'property-img' },
               _react2.default.createElement(
-                'a',
-                { href: 'properties-details.html' },
-                'titulo de publicacion'
-              )
-            ),
-            _react2.default.createElement(
-              'h3',
-              { className: 'property-address' },
-              _react2.default.createElement(
-                'a',
-                { href: 'properties-details.html' },
-                _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                'Direccion'
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'facilities-list clearfix' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'tama\xF1o terreno'
-                )
+                'div',
+                { className: 'property-tag button alt featured' },
+                'Destacada'
               ),
               _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '3 Beds'
-                )
+                'div',
+                { className: 'property-tag button sale' },
+                property.status
               ),
               _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-monitor' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'TV'
-                )
+                'div',
+                { className: 'property-price' },
+                '$',
+                property.price
               ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '2 Baths'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '1 Garage'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement('i', { className: 'flaticon-building' }),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '3 Balcony'
-                )
-              )
+              _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
             ),
             _react2.default.createElement(
               'div',
-              { className: 'property-footer' },
+              { className: 'property-content' },
               _react2.default.createElement(
-                'span',
-                { className: 'left' },
-                _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                '5 days ago'
+                'h1',
+                { className: 'title' },
+                _react2.default.createElement(
+                  'a',
+                  { href: 'properties-details.html' },
+                  property.title
+                )
               ),
               _react2.default.createElement(
-                'span',
-                { className: 'right' },
+                'h3',
+                { className: 'property-address' },
                 _react2.default.createElement(
                   'a',
-                  { href: 'index.html#' },
-                  _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                  { href: 'properties-details.html' },
+                  _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                  'Direccion'
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'facilities-list clearfix' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    property.size
+                  )
                 ),
                 _react2.default.createElement(
-                  'a',
-                  { href: 'index.html#' },
-                  _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '3 Beds'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-monitor' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'TV'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '2 Baths'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '1 Garage'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement('i', { className: 'flaticon-building' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '3 Balcony'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'property-footer' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'left' },
+                  _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                  '5 days ago'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'right' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#' },
+                    _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'index.html#' },
+                    _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                  )
                 )
               )
             )
           )
+        );
+      });
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'filtr-container' },
+          properties
         )
       );
     }
@@ -25796,11 +25810,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -25953,11 +25967,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -25997,9 +26011,9 @@ var RecentlyProperties = function (_Component) {
                             _react2.default.createElement(
                                 'span',
                                 null,
-                                'Recently'
+                                'Propiedades'
                             ),
-                            ' Properties'
+                            ' Recientes'
                         )
                     ),
                     _react2.default.createElement(
@@ -26483,11 +26497,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -26716,11 +26730,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -27123,11 +27137,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -27277,11 +27291,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _axios = __webpack_require__(9);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -27415,13 +27429,17 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _axios = __webpack_require__(8);
+var _FooterTop = __webpack_require__(225);
 
-var _axios2 = _interopRequireDefault(_axios);
+var _FooterTop2 = _interopRequireDefault(_FooterTop);
+
+var _FooterBottom = __webpack_require__(226);
+
+var _FooterBottom2 = _interopRequireDefault(_FooterBottom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27445,115 +27463,10 @@ var Footer = function (_Component) {
     value: function render() {
 
       return _react2.default.createElement(
-        'footer',
-        { className: 'main-footer clearfix' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'footer-top' },
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-5 col-md-4 col-sm-3 col-xs-12' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'logo-2' },
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'index.html' },
-                    _react2.default.createElement('img', { src: 'img/logos/footer-logo.png', alt: 'footer-logo' })
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-4  col-md-4 col-sm-5 col-xs-12' },
-                _react2.default.createElement(
-                  'form',
-                  { action: '#', method: 'post' },
-                  _react2.default.createElement('input', { type: 'text', className: 'form-contact', name: 'email', placeholder: 'Enter your email' }),
-                  _react2.default.createElement(
-                    'button',
-                    { type: 'submit', name: 'submitNewsletter', className: 'btn btn-default button-small' },
-                    _react2.default.createElement('i', { className: 'fa fa-paper-plane' })
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-3 col-md-4 col-sm-4 col-xs-12' },
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'social-list clearfix' },
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-rss' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'a',
-                      { href: 'index.html#' },
-                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'copy-right' },
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            '\xA9 2017',
-            _react2.default.createElement(
-              'a',
-              { href: 'http://themevessel.com/', target: '_blank' },
-              'Theme Vessel'
-            ),
-            '. Trademarks and brands are the property of their respective owners.'
-          )
-        )
+        'div',
+        null,
+        _react2.default.createElement(_FooterTop2.default, null),
+        _react2.default.createElement(_FooterBottom2.default, null)
       );
     }
   }]);
@@ -27562,6 +27475,579 @@ var Footer = function (_Component) {
 }(_react.Component);
 
 exports.default = Footer;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FooterTop = function (_Component) {
+  _inherits(FooterTop, _Component);
+
+  function FooterTop() {
+    _classCallCheck(this, FooterTop);
+
+    return _possibleConstructorReturn(this, (FooterTop.__proto__ || Object.getPrototypeOf(FooterTop)).apply(this, arguments));
+  }
+
+  _createClass(FooterTop, [{
+    key: "render",
+    value: function render() {
+
+      return _react2.default.createElement(
+        "footer",
+        { className: "main-footer clearfix" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "div",
+            { className: "footer-top" },
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-5 col-md-4 col-sm-3 col-xs-12" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "logo-2" },
+                  _react2.default.createElement(
+                    "a",
+                    { href: "index.html" },
+                    _react2.default.createElement("img", { src: "img/logos/footer-logo.png", alt: "footer-logo" })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-4  col-md-4 col-sm-5 col-xs-12" },
+                _react2.default.createElement(
+                  "form",
+                  { action: "#", method: "post" },
+                  _react2.default.createElement("input", { type: "text", className: "form-contact", name: "email", placeholder: "Enter your email" }),
+                  _react2.default.createElement(
+                    "button",
+                    { type: "submit", name: "submitNewsletter", className: "btn btn-default button-small" },
+                    _react2.default.createElement("i", { className: "fa fa-paper-plane" })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-3 col-md-4 col-sm-4 col-xs-12" },
+                _react2.default.createElement(
+                  "ul",
+                  { className: "social-list clearfix" },
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                      "a",
+                      { href: "index.html#" },
+                      _react2.default.createElement("i", { className: "fa fa-rss" })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                      "a",
+                      { href: "index.html#" },
+                      _react2.default.createElement("i", { className: "fa fa-google-plus" })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                      "a",
+                      { href: "index.html#" },
+                      _react2.default.createElement("i", { className: "fa fa-linkedin" })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                      "a",
+                      { href: "index.html#" },
+                      _react2.default.createElement("i", { className: "fa fa-twitter" })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                      "a",
+                      { href: "index.html#" },
+                      _react2.default.createElement("i", { className: "fa fa-facebook" })
+                    )
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "footer-info" },
+            _react2.default.createElement(
+              "div",
+              { className: "row" },
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-4 col-md-4 col-sm-6 col-xs-12" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "footer-item" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-title-2" },
+                    _react2.default.createElement(
+                      "h1",
+                      null,
+                      "Contact Us"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    null,
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printing and typesetting"
+                  ),
+                  _react2.default.createElement(
+                    "ul",
+                    { className: "personal-info" },
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement("i", { className: "fa fa-map-marker" }),
+                      "Address: 20/F Green Road, Dhanmondi, Dhaka"
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement("i", { className: "fa fa-envelope" }),
+                      "Email:",
+                      _react2.default.createElement(
+                        "a",
+                        { href: "mailto:sales@hotelempire.com" },
+                        "info@themevessel.com"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement("i", { className: "fa fa-phone" }),
+                      "Phone:",
+                      _react2.default.createElement(
+                        "a",
+                        { href: "tel:+55-417-634-7071" },
+                        "+55 4XX-634-7071"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement("i", { className: "fa fa-fax" }),
+                      "Fax: +55 4XX-634-7071"
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-2 col-md-2 col-sm-6 col-xs-12" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "footer-item" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-title-2" },
+                    _react2.default.createElement(
+                      "h1",
+                      null,
+                      "Links"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "ul",
+                    { className: "links" },
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html" },
+                        "Home"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "about.html" },
+                        "About Us"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "contact.html" },
+                        "Contact Us"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "blog-single.html" },
+                        "Blog"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "properties-list-rightside.html" },
+                        "properties Listing"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "properties-grid-rightside.html" },
+                        "properties Grid"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "properties-details.html" },
+                        "properties Details"
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-3 col-md-3 col-sm-6 col-xs-12" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "footer-item tags-box" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-title-2" },
+                    _react2.default.createElement(
+                      "h1",
+                      null,
+                      "Tags"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "ul",
+                    { className: "tags" },
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Image"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Features"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Typography"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Gallery"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Slideshow"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Post Formats"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Sellers"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "WooCommerce"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { href: "index.html#" },
+                        "Shortcodes"
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col-lg-3 col-md-3 col-sm-6 col-xs-12" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "footer-item popular-posts" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "main-title-2" },
+                    _react2.default.createElement(
+                      "h1",
+                      null,
+                      "popular posts"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "media" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-left" },
+                      _react2.default.createElement("img", { className: "media-object", src: "img/properties/small-properties-1.jpg", alt: "small-properties-1" })
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-body" },
+                      _react2.default.createElement(
+                        "h3",
+                        { className: "media-heading" },
+                        _react2.default.createElement(
+                          "a",
+                          { href: "index.html#" },
+                          "Modern Design Building"
+                        )
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "21 October, 2016"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "comments-icon" },
+                        _react2.default.createElement("i", { className: "fa fa-comments" }),
+                        "45 comments"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "media" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-left" },
+                      _react2.default.createElement("img", { className: "media-object", src: "img/properties/small-properties-2.jpg", alt: "small-properties-2" })
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-body" },
+                      _react2.default.createElement(
+                        "h3",
+                        { className: "media-heading" },
+                        _react2.default.createElement(
+                          "a",
+                          { href: "index.html#" },
+                          "Real Eatate Expo 2016"
+                        )
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "10 October, 2016"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "comments-icon" },
+                        _react2.default.createElement("i", { className: "fa fa-comments" }),
+                        "32 comments"
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "media" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-left" },
+                      _react2.default.createElement("img", { className: "media-object", src: "img/properties/small-properties-3.jpg", alt: "small-properties-3" })
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "media-body" },
+                      _react2.default.createElement(
+                        "h3",
+                        { className: "media-heading" },
+                        _react2.default.createElement(
+                          "a",
+                          { href: "index.html#" },
+                          "Construction and Development"
+                        )
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "10 October, 2016"
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "comments-icon" },
+                        _react2.default.createElement("i", { className: "fa fa-comments" }),
+                        "58 comments"
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return FooterTop;
+}(_react.Component);
+
+exports.default = FooterTop;
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FooterBottom = function (_Component) {
+  _inherits(FooterBottom, _Component);
+
+  function FooterBottom() {
+    _classCallCheck(this, FooterBottom);
+
+    return _possibleConstructorReturn(this, (FooterBottom.__proto__ || Object.getPrototypeOf(FooterBottom)).apply(this, arguments));
+  }
+
+  _createClass(FooterBottom, [{
+    key: "render",
+    value: function render() {
+
+      return _react2.default.createElement(
+        "div",
+        { className: "copy-right" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          "\xA9 2017",
+          _react2.default.createElement(
+            "a",
+            { href: "http://themevessel.com/", target: "_blank" },
+            "Theme Vessel"
+          ),
+          ". 2017 Portal Terreno SpA - Todos los derechos reservados"
+        )
+      );
+    }
+  }]);
+
+  return FooterBottom;
+}(_react.Component);
+
+exports.default = FooterBottom;
 
 /***/ })
 /******/ ]);
