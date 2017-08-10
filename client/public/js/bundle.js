@@ -25962,7 +25962,7 @@ exports.default = Services;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25984,502 +25984,502 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var RecentlyProperties = function (_Component) {
-    _inherits(RecentlyProperties, _Component);
+  _inherits(RecentlyProperties, _Component);
 
-    function RecentlyProperties() {
-        _classCallCheck(this, RecentlyProperties);
+  function RecentlyProperties() {
+    _classCallCheck(this, RecentlyProperties);
 
-        return _possibleConstructorReturn(this, (RecentlyProperties.__proto__ || Object.getPrototypeOf(RecentlyProperties)).apply(this, arguments));
-    }
+    return _possibleConstructorReturn(this, (RecentlyProperties.__proto__ || Object.getPrototypeOf(RecentlyProperties)).apply(this, arguments));
+  }
 
-    _createClass(RecentlyProperties, [{
-        key: 'render',
-        value: function render() {
+  _createClass(RecentlyProperties, [{
+    key: 'render',
+    value: function render() {
 
-            return _react2.default.createElement(
+      return _react2.default.createElement(
+        'div',
+        { className: 'mrg-btm-70 recently-properties chevron-icon' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'main-title' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              _react2.default.createElement(
+                'span',
+                null,
+                'Propiedades'
+              ),
+              'Recientes'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'carousel our-partners slide', id: 'ourPartners2' },
+              _react2.default.createElement(
                 'div',
-                { className: 'mrg-btm-70 recently-properties chevron-icon' },
+                { className: 'col-lg-12 mrg-btm-30' },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'main-title' },
-                        _react2.default.createElement(
-                            'h1',
-                            null,
-                            _react2.default.createElement(
-                                'span',
-                                null,
-                                'Propiedades'
-                            ),
-                            ' Recientes'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'carousel our-partners slide', id: 'ourPartners2' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-lg-12 mrg-btm-30' },
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'prev' },
-                                    _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
-                                ),
-                                _react2.default.createElement(
-                                    'a',
-                                    { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'next' },
-                                    _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'carousel-inner' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item active' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-3.jpg', alt: 'properties-3', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Modern Family Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.htmll.html' },
-                                                        'Beautiful Single Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-6.jpg', alt: 'properties-6', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Park Avenue'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'item' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'property' },
-                                            _react2.default.createElement(
-                                                'a',
-                                                { href: 'properties-details.html', className: 'property-img' },
-                                                _react2.default.createElement('img', { src: 'img/properties/properties-2.jpg', alt: 'properties-2', className: 'img-responsive' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'property-content' },
-                                                _react2.default.createElement(
-                                                    'h1',
-                                                    { className: 'title' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        'Sweet Family Home'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { className: 'property-address' },
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'properties-details.html' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
-                                                        '123 Kathal St. Tampa City,'
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'ul',
-                                                    { className: 'facilities-list clearfix' },
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '4800 sq ft'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-bed' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '3 Beds'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-holidays' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            ' 2 Baths'
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'li',
-                                                        null,
-                                                        _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            null,
-                                                            '1 Garage'
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'property-footer' },
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'left' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
-                                                        ' 5 days ago'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'span',
-                                                        { className: 'right' },
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            'a',
-                                                            { href: 'index.html#' },
-                                                            _react2.default.createElement('i', { className: 'fa fa-share-alt' })
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
+                  'a',
+                  { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'prev' },
+                  _react2.default.createElement('i', { className: 'fa fa-chevron-left icon-prev' })
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { className: 'right carousel-control', href: 'index.html#ourPartners2', 'data-slide': 'next' },
+                  _react2.default.createElement('i', { className: 'fa fa-chevron-right icon-next' })
                 )
-            );
-        }
-    }]);
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'carousel-inner' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'item active' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'property' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'properties-details.html', className: 'property-img' },
+                        _react2.default.createElement('img', { src: 'img/properties/properties-3.jpg', alt: 'properties-3', className: 'img-responsive' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'property-content' },
+                        _react2.default.createElement(
+                          'h1',
+                          { className: 'title' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            'Modern Family Home'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'h3',
+                          { className: 'property-address' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                            '123 Kathal St. Tampa City,'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'ul',
+                          { className: 'facilities-list clearfix' },
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '4800 sq ft'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '3 Beds'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '2 Baths'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '1 Garage'
+                            )
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'property-footer' },
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'left' },
+                            _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                            '5 days ago'
+                          ),
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'right' },
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                            ),
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'property' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'properties-details.html', className: 'property-img' },
+                        _react2.default.createElement('img', { src: 'img/properties/properties-1.jpg', alt: 'properties-1', className: 'img-responsive' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'property-content' },
+                        _react2.default.createElement(
+                          'h1',
+                          { className: 'title' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.htmll.html' },
+                            'Beautiful Single Home'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'h3',
+                          { className: 'property-address' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                            '123 Kathal St. Tampa City,'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'ul',
+                          { className: 'facilities-list clearfix' },
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '4800 sq ft'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '3 Beds'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '2 Baths'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '1 Garage'
+                            )
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'property-footer' },
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'left' },
+                            _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                            '5 days ago'
+                          ),
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'right' },
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                            ),
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'property' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'properties-details.html', className: 'property-img' },
+                        _react2.default.createElement('img', { src: 'img/properties/properties-6.jpg', alt: 'properties-6', className: 'img-responsive' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'property-content' },
+                        _react2.default.createElement(
+                          'h1',
+                          { className: 'title' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            'Park Avenue'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'h3',
+                          { className: 'property-address' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                            '123 Kathal St. Tampa City,'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'ul',
+                          { className: 'facilities-list clearfix' },
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '4800 sq ft'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '3 Beds'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '2 Baths'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '1 Garage'
+                            )
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'property-footer' },
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'left' },
+                            _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                            '5 days ago'
+                          ),
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'right' },
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                            ),
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-lg-3 col-md-3 col-sm-6 col-xs-12' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'property' },
+                      _react2.default.createElement(
+                        'a',
+                        { href: 'properties-details.html', className: 'property-img' },
+                        _react2.default.createElement('img', { src: 'img/properties/properties-2.jpg', alt: 'properties-2', className: 'img-responsive' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'property-content' },
+                        _react2.default.createElement(
+                          'h1',
+                          { className: 'title' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            'Sweet Family Home'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'h3',
+                          { className: 'property-address' },
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'properties-details.html' },
+                            _react2.default.createElement('i', { className: 'fa fa-map-marker' }),
+                            '123 Kathal St. Tampa City,'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'ul',
+                          { className: 'facilities-list clearfix' },
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-square-layouting-with-black-square-in-east-area' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '4800 sq ft'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-bed' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '3 Beds'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-holidays' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '2 Baths'
+                            )
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement('i', { className: 'flaticon-vehicle' }),
+                            _react2.default.createElement(
+                              'span',
+                              null,
+                              '1 Garage'
+                            )
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'property-footer' },
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'left' },
+                            _react2.default.createElement('i', { className: 'fa fa-calendar-o icon' }),
+                            '5 days ago'
+                          ),
+                          _react2.default.createElement(
+                            'span',
+                            { className: 'right' },
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-heart-o icon' })
+                            ),
+                            _react2.default.createElement(
+                              'a',
+                              { href: 'index.html#' },
+                              _react2.default.createElement('i', { className: 'fa fa-share-alt' })
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return RecentlyProperties;
+  return RecentlyProperties;
 }(_react.Component);
 
 exports.default = RecentlyProperties;
